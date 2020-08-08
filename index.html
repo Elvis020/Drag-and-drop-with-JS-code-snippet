@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drang and Drop with JS</title>
+
+  <style>
+    * {
+      font-family: Nunito;
+      background-color: #fff;
+    }
+    .drop-zone {
+      width: 100px; 
+      height: 100px;
+      float: left;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 7.8px dashed black;
+    }
+    h1 {
+      color: rgb(25, 200, 9);
+    }
+
+    .drop-zone--over {opacity: .5;}
+
+    #myDraggableElement {
+      width: 50px;
+      height: 50px;
+      background: #000;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Drag and Drop API</h1>
+  <ul class="tsummary summary--with-divider">
+    <li>allows you to drag and drop any element</li>
+    <li>commonly used to allow dragging in files for uploads</li>
+  </ul>
+  <hr>
+  <br>
+  <div class="drop-zone" style="border-color: #de4831;">
+    <div id="myDraggableElement" draggable="true"></div>
+  </div>
+  <div class="drop-zone" style="border-color: #31cfde;"></div>
+
+  <script src="./drag_n_drop.js"></script>
+</body>
+</html>
